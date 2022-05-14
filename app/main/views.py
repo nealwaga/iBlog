@@ -95,7 +95,6 @@ def new_post():
     title = 'iBlog.com'
     #date_created = blog.date_created.strftime('%b %d, %Y')
     
-
     form = BlogForm()
     if form.validate_on_submit():
         title = form.title.data
@@ -159,5 +158,3 @@ def delete_comment(id):
     post_id = comment.blog
     Comment.delete_comment(id)
     return redirect(url_for('main.blog',id=post_id))
-
-
