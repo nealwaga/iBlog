@@ -12,7 +12,7 @@ from collections import OrderedDict
 import argparse
 
 from flask import Flask
-from flask._compat import text_type
+from flask_script._compat import text_type
 
 from ._compat import iteritems
 from .commands import Group, Option, Command, Server, Shell

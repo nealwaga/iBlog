@@ -12,7 +12,6 @@ def load_user(user_id):
 
 class User(UserMixin,db.Model):
     __tablename__ = 'users'
-
     id = db.Column(db.Integer,primary_key = True)
     username = db.Column(db.String(255),index = True)
     email = db.Column(db.String(255),unique = True,index = True)
@@ -24,7 +23,7 @@ class User(UserMixin,db.Model):
     @property
     def set_password(self):
         raise AttributeError('You cannot read the password attribute')
-        
+
     @set_password.setter
     def password(self, password):
         self.secure_password = generate_password_hash(password)
