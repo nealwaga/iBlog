@@ -1,27 +1,27 @@
 #from typing_extensions import Required
 from flask_wtf import FlaskForm
 from wtforms import StringField, TextAreaField, SubmitField, SelectField
-from wtforms.validators import DataRequired, Email
+from wtforms.validators import InputRequired, Email
 
 
 class BlogForm(FlaskForm):
-    title = StringField('Author', validators=[DataRequired()])
-    post = TextAreaField('Blog', validators=[DataRequired()])
+    title = StringField('Author', validators=[InputRequired()])
+    post = TextAreaField('Blog', validators=[InputRequired()])
     submit = SubmitField('Post')
 
 
 class UpdateProfile(FlaskForm):
-    bio = TextAreaField('Tell us about you...', validators=[DataRequired()])
+    bio = TextAreaField('Tell us about you...', validators=[InputRequired()])
     submit = SubmitField('Submit')
 
 
 class UpdateProfile(FlaskForm):
-    bio = TextAreaField('Bio', validators=[DataRequired()])
+    bio = TextAreaField('Bio', validators=[InputRequired()])
     submit = SubmitField('Post')
 
 
 class CommentForm(FlaskForm):
-    comment = TextAreaField('Comment', validators=[DataRequired()])
+    comment = TextAreaField('Comment', validators=[InputRequired()])
     submit = SubmitField('Post')
 
 
