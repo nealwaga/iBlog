@@ -1,0 +1,19 @@
+{% extends 'base.html'%} {% from 'display_macro.html' import display_pitches%} {% block content%} {% block styles %} {{super()}}
+<link rel="stylesheet" href="{{url_for('static',filename='css/particle.css')}}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"> {% endblock %}
+<title>{{title}}</title>
+<div class="bgimage">
+    <div class="p-3 p-md-5 m-md-3 text-center bg-transparent">
+        <div class="col-md-12 p-lg-5 mx-auto my-5">
+            <h2 class="display-4 font-weight-normal text-white">iBlog.com</h2>
+            <p class="lead font-weight-normal text-white">{{Quote.quote}} &nbsp;&nbsp;&nbsp;&nbsp;Author: {{Quote.author}}
+            </p>
+            <div id="buttons d-block mx-auto">
+                <a class="btn btn-outline-secondary text-white" href="/new_blog">Blog Here</a>&nbsp;&nbsp;
+
+                <a class="btn btn-outline-secondary text-white" href="/blogs">View Blogs</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
