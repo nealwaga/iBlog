@@ -48,3 +48,26 @@ class Quote:
         
         self.author = author
         self.quote = quote
+
+
+class Post(db.Model):
+    __tablename__ = 'posts'
+    id = db.Column(db.Integer, primary_key=True)
+    title = db.Column(db.String, nullable=False)
+    user_id = db.Column(db.String, nullable=False)
+    post = db.Column(db.String, nullable=False)
+    comment = db.relationship('Comment', backref='post', lazy='dynamic')
+    date_created = db.Column(db.DateTime, default=datetime.utcnow)
+    up_vote = db.relationship('Upvote', backref='post', lazy='dynamic')
+    down_vote = db.relationship('Downvote', backref='post', lazy='dynamic')
+
+    def save(self):
+        db.session.add(self)
+        db.session.commit()
+
+    def delete(self):
+        db.session.delete(self)
+        db.session.commit()
+
+    def __repr__(self):
+        return f"Post Title: {self.title}"
