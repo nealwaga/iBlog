@@ -37,3 +37,14 @@ class User(UserMixin,db.Model):
         db.session.commit()
     def __repr__(self):
         return f'User {self.username}'
+
+
+class Quote:
+    '''
+    Quote class to define Quotes Objects
+    '''
+
+    def __init__(self,author, quote):
+        
+        self.author = author
+        self.quote = quote
