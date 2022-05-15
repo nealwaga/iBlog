@@ -155,3 +155,10 @@ class Downvote(db.Model):
 
     def __repr__(self):
         return f'{self.user_id}:{self.post_id}'
+
+
+class Subscriber(db.Model):
+    __tablename__ = 'subscribers'
+    id = db.Column(db.Integer,primary_key = True)
+    name = db.Column(db.String(20))
+    email = db.Column(db.String(), unique = True)  
