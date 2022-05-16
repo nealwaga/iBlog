@@ -11,12 +11,8 @@ class Config:
     UPLOADED_PHOTOS_DEST ='app/static/photos'
 
     MAIL_SERVER = 'smtp.googlemail.com'
-    #MAIL_PORT = 587
-    #MAIL_USE_TLS = True
-    #MAIL_USERNAME = os.environ.get("MAIL_USERNAME")
     MAIL_USERNAME = 'waganeal@gmail.com'
-    #MAIL_PASSWORD = os.environ.get("MAIL_PASSWORD")
-    MAIL_PASSWORD = 'WwnScrumhalf9.'
+    MAIL_PASSWORD = 'wnScrumhalf9.'
     SUBJECT_PREFIX = 'iBlog.com'
     SENDER_EMAIL = 'waganeal@gmail.com'
     MAIL_PORT = 465
