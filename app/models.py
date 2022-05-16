@@ -43,13 +43,13 @@ class Quote:
     '''
     Quote class to define Quotes Objects
     '''
-
     def __init__(self,author, quote):
         
         self.author = author
         self.quote = quote
 
 
+#
 class Post(db.Model):
     __tablename__ = 'posts'
     id = db.Column(db.Integer, primary_key=True)
@@ -73,6 +73,7 @@ class Post(db.Model):
         return f"Post Title: {self.title}"
 
 
+#Done
 class Comment(db.Model):
     __tablename__ = 'comments'
     id = db.Column(db.Integer, primary_key=True)
@@ -98,7 +99,7 @@ class Comment(db.Model):
     def __repr__(self):
         return f'Comments: {self.comment}'
 
-
+#Done
 class Upvote(db.Model):
     __tablename__ = 'upvotes'
     id = db.Column(db.Integer, primary_key=True)
@@ -128,6 +129,7 @@ class Upvote(db.Model):
         return f'{self.user_id}:{self.post_id}'
 
 
+#Done
 class Downvote(db.Model):
     __tablename__ = 'downvotes'
     id = db.Column(db.Integer, primary_key=True)
@@ -157,6 +159,7 @@ class Downvote(db.Model):
         return f'{self.user_id}:{self.post_id}'
 
 
+#Done
 class Subscriber(db.Model):
     __tablename__ = 'subscribers'
     id = db.Column(db.Integer,primary_key = True)

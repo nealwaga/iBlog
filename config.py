@@ -5,14 +5,14 @@ class Config:
     General configuration parent class
     '''
     QUOTE_API_BASE_URL = 'http://quotes.stormconsultancy.co.uk/random.json'
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://neal:Wneal9.@localhost/blog'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://neal:Wneal9.@localhost/blogs'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
-    #SECRET_KEY =
+    #SECRET_KEY = 
     UPLOADED_PHOTOS_DEST ='app/static/photos'
 
 
 class TestConfig(Config):
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://neal:Wneal9.@localhost/blog'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://neal:Wneal9.@localhost/blogs'
 
 
 class ProdConfig(Config):
