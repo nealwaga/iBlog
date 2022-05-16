@@ -7,9 +7,8 @@ class Config:
     QUOTE_API_BASE_URL = 'http://quotes.stormconsultancy.co.uk/random.json'
     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://neal:Wneal9.@localhost/blogs'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
-    #SECRET_KEY = 
+    SECRET_KEY = '7Q6itHDJ6LqJMTKWDM5SCjGwQDQurh'
     UPLOADED_PHOTOS_DEST ='app/static/photos'
-
 
 class TestConfig(Config):
     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://neal:Wneal9.@localhost/blogs'
