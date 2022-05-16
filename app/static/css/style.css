@@ -67,7 +67,7 @@ body {
 }
 
 .bgimage {
-    background-image: url('/app/static/photos/blog1.jpg');
+    background-image: url('../photos/blog1.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

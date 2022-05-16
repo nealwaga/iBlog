@@ -1,4 +1,3 @@
-#from wsgiref.validate import validator
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField
 from wtforms.validators import DataRequired, Email, EqualTo
@@ -11,7 +10,7 @@ class RegistrationForm(FlaskForm):
     email= StringField('Your Email Address', validators=[DataRequired(), Email()])
     username = StringField('Enter your username', validators=[DataRequired()])
     password = PasswordField('Password', validators =[DataRequired(), EqualTo('password_confirm', message='Passwords must match')])
-    password_confirm = PasswordField('Confirm passwords', validators=[DataRequired])
+    password_confirm = PasswordField('Confirm passwords', validators=[DataRequired()])
 
     #Validating the email entered
     def validate_email(self, data_field):
