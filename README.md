@@ -1,5 +1,5 @@
 # iBlog
-BlogTech is a web application that allows users to create blogs. The users will be able to submit their  blogs and other users will vote on them and leave comments to give their feedback.
+iBlog is a web application that allows users to create blogs. The users will be able to submit their  blogs and other users will vote on them and leave comments to give their feedback.
 
 
 ## Author
