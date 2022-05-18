@@ -1,0 +1,21 @@
+{% extends 'base.html'%} {% from 'comment_macro.html' import display_comments%} {% import 'bootstrap/wtf.html' as wtf %} {% block styles %} {{super()}}
+<title>{{title}}</title>
+<link rel="stylesheet" href="{{url_for('static',filename='css/particle.css')}}">
+<link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}"> {% endblock %} {% block content %}
+<div class="container-fluid"><br><br>
+    <div>
+        <a href="/blogs"><button class="btn btn-primary"> See blogs</button></a>
+    </div><br><br><br><br><br>
+    <div class="row col-md-12">
+        <div class="col-md-4">
+            <div class="text-white">{{wtf.quick_form(form)}}</div>
+        </div>
+        <div class="col-md-8">
+            <h4 class="text-center text-white">Comments:</h4>
+            <p>{{display_comments(comments)}}</p>
+
+        </div>
+    </div>
+
+</div>
+{% endblock%}

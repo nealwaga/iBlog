@@ -1,0 +1,21 @@
+{% import 'bootstrap/wtf.html' as wtf %}
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> {% block styles%}
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap4/css/bootstrap.min.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet"> {% endblock %}
+</head>
+
+<body>
+    {% block navbar%} {% include 'navbar.html'%} {% endblock %} {% block content%} {% endblock %} {% block blog %} {% endblock %} {% block scripts%} {% endblock %}
+
+</body>
+
+</html>

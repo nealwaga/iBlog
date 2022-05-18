@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container1 {
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.login-text {
+    font-family: 'Quicksand', sans-serif;
+}
+
+#login {
+    font-weight: bold;
+}
+
+#logo {
+    font-family: 'Special Elite', cursive;
+    color: #ed5107;
+    font-size: 20px;
+}
+
+#option-signup {
+    margin-top: 20px;
+}
+
+.division {
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+
+#centered-card {
+    margin: 0;
+    padding: 0;
+}
+
+#hellobutton:hover {
+    background: darkmagenta;
+}
+
+
+/*Home styles*/
+
+.container {
+    max-width: 960px;
+}
+
+.site-header {
+    background-color: rgba(0, 0, 0, .85);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+}
+
+.site-header a {
+    color: #999;
+    transition: ease-in-out color .15s;
+}
+
+.site-header a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.bgimage {
+    background-image: url('../photos/blog1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    padding-top: 70px;
+    padding-bottom: 130px;
+}
+
+#buttons {
+    display: flex;
+}
+
+.flex-stuff {
+    display: flex;
+}
