@@ -5,10 +5,10 @@ class Config:
     General configuration parent class
     '''
     QUOTE_API_BASE_URL = 'http://quotes.stormconsultancy.co.uk/random.json'
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://neal:Wneal9.@localhost/blogs'
-    #SQLALCHEMY_DATABASE_URI = 'postgres://gkcqkszsaludeg:52eb94e487f0210f566752efc416c41a7f43800dac508debfa0fb05418d466ba@ec2-44-195-169-163.compute-1.amazonaws.com:5432/d9am8t1lgh2lu8'
+    #SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://neal:Wneal9.@localhost/blogs'
+    SQLALCHEMY_DATABASE_URI = 'postgres://kvniowexaemmua:78578deba5ffba2bbf019a9969cbbbea241bb9f8c9f626a3578efeaad3348fe1@ec2-52-86-115-245.compute-1.amazonaws.com:5432/d1cf50sk6jl424'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
-    SECRET_KEY = '7Q6itHDJ6LqJMTKWDM5SCjGwQDQurh'
+    SECRET_KEY = '1234'
     UPLOADED_PHOTOS_DEST ='app/static/photos'
 
     MAIL_SERVER = 'smtp.googlemail.com'
